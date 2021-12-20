@@ -12,6 +12,8 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --transition-effect: cubic-bezier(0.4, 0, 0.2, 1); 
+  --transition-duration: var(--transition-duration);
 }
 
 /* --------------BODY-------------- */
@@ -133,8 +135,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 
   color: var(--title-text-color);
 }
@@ -191,8 +193,8 @@ ul {
   padding-bottom: 32px;
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .contacts-link:hover,
@@ -442,8 +444,8 @@ background-color: rgba(47, 48, 58, 0.8);
   fill: rgba(175, 177, 184, 1);
 
   transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .icon-nets-link:hover,
@@ -498,8 +500,8 @@ background-color: rgba(47, 48, 58, 0.8);
   border-radius: 4px;
 
   transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .clients-link:hover,
@@ -508,7 +510,7 @@ background-color: rgba(47, 48, 58, 0.8);
   border-color: var(--accent-color);
 }
 
-/* --------------FOOTER-------------- */
+/* --------------button-------------- */
 
 .footer {
   padding: 60px 0;
@@ -539,8 +541,8 @@ background-color: rgba(47, 48, 58, 0.8);
   color: rgba(255, 255, 255, 0.6);
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);  
 }
 
 .adress-link:hover,
@@ -597,8 +599,8 @@ background-color: rgba(47, 48, 58, 0.8);
   fill: var(--primary-white-color);
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);    
 }
 
 .our-nets-link:hover,
@@ -637,15 +639,14 @@ background-color: rgba(47, 48, 58, 0.8);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
   cursor: pointer;
 
   transition-property: color, background-color, box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);  
 }
 
 .button:hover,
@@ -679,8 +680,8 @@ background-color: rgba(47, 48, 58, 0.8);
 
 .projects-link {
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .projects-link:hover,
@@ -725,7 +726,7 @@ background-color: rgba(47, 48, 58, 0.8);
   height: 100%;  
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-duration) var(--transition-effect);
   font-size: 18px;
   line-height: 1.55;
 
@@ -744,7 +745,7 @@ background-color: rgba(47, 48, 58, 0.8);
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-duration) var(--transition-effect), visibility var(--transition-duration) var(--transition-effect);
 }
 
 .backdrop.is-hidden {
