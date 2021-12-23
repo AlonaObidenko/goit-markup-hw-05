@@ -767,14 +767,17 @@ background-color: rgba(47, 48, 58, 0.8);
 }
 
 .btn-open {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: unset;
-  border-radius: 50%;
   position: absolute;
   right: 8px;
   top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: unset;
   cursor: pointer;
 }
 
