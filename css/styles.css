@@ -37,6 +37,9 @@ button {
     padding: 0;
     border: none;
 }
+input {
+    font-family: inherit;
+}
 
 .visually-hidden {
     position: absolute;
@@ -50,6 +53,7 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .section {
 padding: 120px 0;
 }
