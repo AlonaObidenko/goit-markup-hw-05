@@ -659,6 +659,7 @@ color: currentColor;
 .subscribe-form-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-width: 165px;
     gap: 16px;
     padding: 8px 24px;
