@@ -623,7 +623,7 @@ border-color: #404BBF;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
-.checkbox:checked {
+.checkbox:checked+.form-agreement-checkbox {
 background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
