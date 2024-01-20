@@ -632,14 +632,16 @@ border-color: #404BBF;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    line-height: 2.5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 .subscribe-form-input {
     width: 264px;
     height: 40px;
-    padding: 16px 8px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     flex-shrink: 0;
     background-color: transparent;
     outline: transparent;
@@ -657,6 +659,7 @@ color: currentColor;
 .subscribe-form-btn {
     display: flex;
     align-items: center;
+    min-width: 165px;
     gap: 16px;
     padding: 8px 24px;
     border-radius: 4px;
@@ -667,4 +670,7 @@ color: currentColor;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+.subscribe-form-icon {
+    margin-left: 16px;
 }
